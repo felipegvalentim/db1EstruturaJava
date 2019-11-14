@@ -6,3 +6,5 @@ IndexOutOfBoundsException
 
 == Referencia tem q ser igual
 Equals identidade pode ser parecido
+
+
