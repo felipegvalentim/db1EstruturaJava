@@ -1,0 +1,13 @@
+Exercícios:
+
+Exercício de Inteiro (Integer)
+1 - some dois números
+2 - subtraia dois números
+
+Exercícios de Texto (String)
+1 - Crie uma variável que recebe um texto com letras minusculas e imprima com LETRAS MAIUSCULAS
+2 - Crie uma variável que receba um texto e devolva ele em LETRAS MINUSCULAS
+
+Exercício de Matematica (Double)
+1 - Crie duas variáveis double, defina um valor para cada, e exiba qual é o menor valor entre dois
+2 - Crie três variáveis double, defina um valor para cada,  e exiba qual é o menor valor entre os três

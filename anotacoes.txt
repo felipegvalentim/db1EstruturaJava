@@ -1,0 +1,8 @@
+Listas
+Mapas
+Sets
+
+IndexOutOfBoundsException
+
+== Referencia tem q ser igual
+Equals identidade pode ser parecido

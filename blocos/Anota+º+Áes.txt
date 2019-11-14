@@ -1,0 +1,2 @@
+Shift + f6 (Altera valores semelhantes)
+expressao ? true : false (Estrutura de condição)
