@@ -1,0 +1,60 @@
+public String inverterTexto(String texto){
+        String textoInvertido = new StringBuilder(texto).reverse().toString();
+        return textoInvertido;
+    }
+
+    //MÉTODOS DE MATEMATICA
+    public Double menorValor(Double valor1, Double valor2){
+        if (valor1 < valor2){
+            return valor1;
+        }
+        return valor2;
+    }
+    public Double menorValorEntre3(Double valor1, Double valor2, Double valor3){
+        return menorValor(menorValor(valor1, valor2),valor3);
+    }
+    public Integer media(Integer num1, Integer num2, Integer num3){
+        num1 = (num1 + num2 + num3) / 3;
+        return num1;
+    }
+    public Integer areaDoTriangulo(Integer base, Integer alt){
+        alt = 2;
+        Integer area = (base*base) / alt;
+        return area;
+    }
+}
+
+
+@Test
+    public void deveMostrarTextoInvertido(){
+        String expected = "leafar";
+        String response = application.inverterTexto("rafael");
+        Assert.assertEquals(expected, response);
+    }
+
+    // Testes de Matemática
+    @Test
+    public void deveMostrarMenorValor(){
+        Double expected = 13.5;
+        Double response = application.menorValor(13.5, 15.4);
+        Assert.assertEquals(expected, response);
+    }
+    @Test
+    public void deveMostrarOMenorValorEntre3(){
+        Double expected = 9.4;
+        Double response = application.menorValorEntre3(13.4, 14.6, 9.4);
+        Assert.assertEquals(expected, response);
+    }
+    @Test
+    public void deveMostrarAMediaDe3Numeros(){
+        Integer expected = 5;
+        Integer response = application.media(5, 6, 4);
+        Assert.assertEquals(expected, response);
+    }
+    @Test
+    public void deveMostrarAreaDoTriangulo(){
+        Integer expected = 50;
+        Integer response = application.areaDoTriangulo(10, 2);
+        Assert.assertEquals(expected, response);
+    }
+}
